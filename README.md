@@ -9,7 +9,7 @@
 
 ## About <a name = "about"></a>
 
-Very simple ski bindings force calculator.
+Very simple App for calculating the release force of a ski bindings.
 
 ## How to start that app <a name = "start"></a>
 

@@ -10,16 +10,16 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <title>Nervos DAO</title>
+          <title>Dziobak Ski Calc</title>
 
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
           <meta name="theme-color" />
           <meta charSet="utf-8" />
 
-          <meta property="og:url" content="https://www.nervosdao.community/" />
+          <meta property="og:url" content="https://dsc-two.vercel.app/" />
           <meta property="og:type" content="website" />
-          <meta property="og:title" content="Nervos DAO" />
-          <meta property="og:description" content="Nervos foundation DAO" />
+          <meta property="og:title" content="Dziobak Ski Calc" />
+          <meta property="og:description" content="Dziobak Ski Calc" />
           <link rel="shortcut icon" href="/favicon.png" />
           <link
             rel="stylesheet"

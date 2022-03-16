@@ -11,11 +11,13 @@
 
 Very simple App for calculating the release force of a ski bindings.
 
-## How to start that app <a name = "start"></a>
+## How to start that app locally <a name = "start"></a>
 
-How to run:
+### Download repo
 
-### Download repo.
+```
+git clone https://github.com/dziobakwszafie/ski-bindings-calc.git
+```
 
 ### Install dependencies
 

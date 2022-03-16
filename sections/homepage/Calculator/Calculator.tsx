@@ -17,15 +17,16 @@ const Calculator: FC = () => {
   const [weight, setWeight] = useState(null);
   const [boot, setBoot] = useState(null);
   const [skill, setSkill] = useState(0);
+  const [age, setAge] = useState(0);
   const [final, setFinal] = useState(0);
 
   useEffect(() => {
-    if (height !== null && weight !== null && boot !== null && skill !== null) {
+    if (height !== null && weight !== null && boot !== null && skill !== null && age !== null) {
       const biggerOfTwo = Math.max(height, weight);
-      const addedSkill = biggerOfTwo + skill;
+      const addedSkill = biggerOfTwo + skill + age;
       setFinal(table[addedSkill][boot]);
     }
-  }, [height, weight, boot, skill]);
+  }, [height, weight, boot, skill, age]);
 
   const heightLabel = (value: number) => {
     const units = ['<148', '149-157', '158-166', '167-178', '179-194', '>195'];
@@ -68,6 +69,14 @@ const Calculator: FC = () => {
       return 'początkujący';
     } else {
       return `${units[value]}`;
+    }
+  };
+
+  const ageLabel = (value: number) => {
+    if (value === -1) {
+      return '<9 lub >50';
+    } else {
+      return '10-49';
     }
   };
 
@@ -166,6 +175,21 @@ const Calculator: FC = () => {
           getAriaValueText={skillLabel}
           valueLabelFormat={skillLabel}
           onChange={(event: any) => setSkill(event.target.value)}
+        />
+      </Box>
+
+      <Box mt={2}>
+        <Typography variant="body1">Wiek narciarza [lata]</Typography>
+        <Slider
+          aria-label="Boot"
+          valueLabelDisplay="auto"
+          step={1}
+          marks
+          min={-1}
+          max={0}
+          getAriaValueText={ageLabel}
+          valueLabelFormat={ageLabel}
+          onChange={(event: any) => setAge(event.target.value)}
         />
       </Box>
 

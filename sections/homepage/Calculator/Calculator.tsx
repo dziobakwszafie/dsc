@@ -25,8 +25,8 @@ const Calculator: FC = () => {
   const [height, setHeight] = useState(null);
   const [weight, setWeight] = useState(null);
   const [boot, setBoot] = useState(null);
-  const [skill, setSkill] = useState(0);
-  const [age, setAge] = useState(0);
+  const [skill, setSkill] = useState(-2);
+  const [age, setAge] = useState(-1);
   const [final, setFinal] = useState(0);
 
   useEffect(() => {

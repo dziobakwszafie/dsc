@@ -2,6 +2,8 @@
 /* eslint-disable react/jsx-no-bind */
 import React, { FC, useState, useEffect } from 'react';
 
+import styled from '@emotion/styled';
+
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Slider from '@mui/material/Slider';
@@ -11,6 +13,13 @@ import TooltipIcon from 'components/TooltipIcon/TooltipIcon';
 import Link from 'components/Link/Link';
 
 import table from 'utils/table';
+
+const TypographyGradient = styled(Typography)`
+  font-weight: 600;
+  background: ${({ theme }) => theme.palette.gradients.grad1};
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+`;
 
 const Calculator: FC = () => {
   const [height, setHeight] = useState(null);
@@ -76,7 +85,7 @@ const Calculator: FC = () => {
     if (value === -1) {
       return '<9 lub >50';
     } else {
-      return '10-49';
+      return '10-50';
     }
   };
 
@@ -193,9 +202,9 @@ const Calculator: FC = () => {
         />
       </Box>
 
-      <Typography variant="h3" my={3} width="100%" align="center">
+      <TypographyGradient variant="h3" my={3} width="100%" align="center">
         <b>{final} DIN</b>
-      </Typography>
+      </TypographyGradient>
 
       <Link href="https://github.com/dziobakwszafie" target="_blank">
         <Typography variant="body2" width="100%" align="center">

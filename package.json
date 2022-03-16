@@ -1,0 +1,49 @@
+{
+  "name": "nervos-dao",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3015",
+    "build": "next build",
+    "build-export": "next build && next export",
+    "start": "next start",
+    "test": "jest",
+    "lint": "eslint ./",
+    "lint-next": "next lint",
+    "lint-fix": "eslint ./ --fix",
+    "prettier:check": "prettier --check ./*"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.6.0",
+    "@emotion/react": "^11.4.1",
+    "@emotion/server": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.1.1",
+    "@mui/lab": "^5.0.0-alpha.51",
+    "@mui/material": "^5.1.1",
+    "@mui/styles": "^5.1.1",
+    "@mui/system": "^5.1.1",
+    "@reduxjs/toolkit": "^1.8.0",
+    "next": "12.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.6",
+    "yarn": "^1.22.17"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@types/material-ui": "^0.21.9",
+    "@types/node": "17.0.21",
+    "@types/react": "17.0.39",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "babel-loader": "^8.2.3",
+    "eslint": "8.10.0",
+    "eslint-config-airbnb": "^19.0.1",
+    "eslint-config-airbnb-typescript": "^16.0.0",
+    "eslint-config-next": "12.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-storybook": "^0.5.1",
+    "prettier": "2.5.1",
+    "typescript": "4.6.2"
+  }
+}

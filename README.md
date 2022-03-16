@@ -1,4 +1,4 @@
-# Next.js & Material UI template
+# Ski bindings force calculator
 
 ## Table of Contents
 
@@ -9,7 +9,7 @@
 
 ## About <a name = "about"></a>
 
-Simple Next.js & Material UI starter template
+Very simple ski bindings force calculator.
 
 ## How to start that app <a name = "start"></a>
 
@@ -20,16 +20,12 @@ How to run:
 ### Install dependencies
 
 ```
-npm i
-or
 yarn
 ```
 
 ### Run app
 
 ```
-npm start
-or
 yarn dev
 ```
 
@@ -41,8 +37,6 @@ yarn dev
 - [NextJS](https://nextjs.org/)
 - [Material UI](https://mui.com/)
 - [Emotion](https://emotion.sh/)
-- [Redux](https://redux.js.org/)
-- [Redux Toolkit](https://redux-toolkit.js.org/)
 
 ## Authors <a name = "authors"></a>
 

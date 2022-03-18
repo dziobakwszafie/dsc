@@ -10,6 +10,7 @@
 ## About <a name = "about"></a>
 
 Very simple App for calculating the release force of a ski bindings.
+2022
 
 ## How to start that app locally <a name = "start"></a>
 
